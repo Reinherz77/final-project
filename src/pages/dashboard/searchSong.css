@@ -1,0 +1,52 @@
+body {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opening-tag-p {
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.btn-submit {
+    font-size: 20px;
+    margin: 10px;
+    background-color: greenyellow;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid black;
+}
+
+.input-text {
+    font-size: 20px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 0 10px;
+}
+
+.btn-viewPlaylist {
+    font-weight: bold;
+    background-color: greenyellow;
+    border-radius: 3px;
+    padding: 7px;
+    margin: 10px;
+}
+
+.create-form {
+    padding: 20px 0;
+}

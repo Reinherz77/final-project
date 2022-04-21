@@ -1,9 +1,8 @@
-const CLIENT_ID = process.env.REACT_APP_CLIENT_ID_APP
+const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID
 const SPOTIFY_AUTHORIZE_ENDPOINT = "https://accounts.spotify.com/authorize"
-const REDIRECT_URL_AFTER_LOGIN = 'http://localhost:3000/dashboard'
+const REDIRECT_URL_AFTER_LOGIN = "http://localhost:3000/dashboard"
 const SCOPES = "playlist-modify-private"
 
-// const auth = (localStorage:local) => {
 const auth = () => {
     window.location.href = `${SPOTIFY_AUTHORIZE_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URL_AFTER_LOGIN}&scope=${SCOPES}&response_type=token&show_dialog=true`;
     localStorage.setItem("isLogIn", true)

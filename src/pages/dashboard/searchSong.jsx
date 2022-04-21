@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
-import CardSong from '../card-song/card-song'
+import CardSong from '../../components/track/songCard/songCard'
 import axios from 'axios';
-import PlaylistForm from '../playlist/form-playlist'
-import PlaylistCard from '../playlist/card-playlist'
+import PlaylistCard from '../../components/playlistCard/playlistCard'
+import PlaylistForm from '../../components/playlistForm/playlistForm'
 import { useSelector, useDispatch } from 'react-redux';
-import { saveMyToken } from '../../redux/tokenAction'
-import './SearchPage.css'
+import { saveMyToken } from '../../components/redux/tokenAction'
+import './searchSong.css'
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-
 
 const SearchingPage = () => {
     const [token, setToken] = useState([]);

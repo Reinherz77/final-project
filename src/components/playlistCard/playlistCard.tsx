@@ -1,5 +1,5 @@
 import React from 'react'
-import './card-playlist.css'
+import './playlistCard.css'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';

@@ -1,29 +1,21 @@
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Redirect,
-} from "react-router-dom"
-import Login from "../components/Pages/LoginPage"
-import SearchingPage from "../components/Pages/SearchPage"
+    Routes,
+    Route
+} from 'react-router-dom'
+import Login from '../../pages/login/loginPage'
+import SearchingPage from "../../pages/dashboard/searchSong"
 
 function RouterApp(){
     const isLogIn = localStorage.getItem("isLogIn")
+
     console.log(isLogIn)
     return (
         <Router>
-            <Switch>
-                <Route path="/searchsong">
-                    {isLogIn ? (
-                        <SearchingPage/> 
-                    ) : (
-                        <Redirect exact from="/searchsong" to="/" />
-                    )}
-                </Route>
-                <Route exact path="/">
-                    <Login/>
-                </Route>
-            </Switch>
+            <Routes>
+                <Route path="/dashboard" element={<SearchingPage />} />
+                <Route exact path="/" element={<Login />}/>
+            </Routes>
         </Router>
     )
 }
