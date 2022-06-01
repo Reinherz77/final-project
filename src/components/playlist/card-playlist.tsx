@@ -1,5 +1,5 @@
 import React from 'react'
-import './playlistCard.css'
+import './card-playlist.css'
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
@@ -39,14 +39,17 @@ function PlaylistCard (props: playlistcard){
     )
 
     return (
+        // <div className='box-playlist-card'>
+        //     <div className="playlist-card">
+        //         <img src={props.url} alt="" />
+        //         <div className="song-component">
+        //             <p>{props.artistName}</p>
+        //             <p className='title-song-playlist'>{props.albumName}</p>
+        //         </div>
+        //     </div>
+        // </div>
         <div className='playlist-card'>
-            <Card 
-            style={{backgroundColor: "lightgreen"}} 
-            variant="outlined" 
-            sx={{ maxWidth: '370' }}
-            >
-                {card}
-            </Card>
+            <Card style={{backgroundColor: "lightgreen"}} variant="outlined" sx={{ maxWidth: '370' }}>{card}</Card>
         </div>
         
     )
